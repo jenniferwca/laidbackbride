@@ -1,0 +1,161 @@
+/* main */
+#title{
+    position: relative;
+}
+#abouttitle{
+    margin: 5% 0 0 20%;
+    display: inline-block;
+    transition: 0.5s;
+}
+#aboutinfo{
+    display: inline-block;
+    width: 40%;
+    margin:0 0 0 5%;
+    padding:10px;
+    border-top:solid 1.25px #fde93a;
+}
+.page-wrapper{
+    margin:0 0 15% 0;
+}
+
+/* login layout */
+.login_container{
+    margin:0 10%;
+    background-color:rgb(230, 230, 230);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.login_form, .register_form{
+    width:50%;
+    padding:7%;
+}
+#loginlogo, #registerlogo{
+    display: block;
+    margin: 0 auto;
+}
+#loginlogo{
+    width:37%;
+}
+#registerlogo{
+    width:50%;
+}
+label{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.warning{
+    font-size: 12px;
+    margin-top:10%;
+}
+input[type=text],input[type=password], select {
+    width: 100%;
+    padding:10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(177, 177, 177);
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+  
+input[type=submit] {
+    width: 40%;
+    background-color: #fde93a;
+    color: black;
+    padding: 13px;
+    margin: 8px auto;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+input[type=submit]:hover {
+    background-color: black;
+    color:white;
+}
+
+/* welcome page */
+#welcomelogo,#whiteflowerlogo,.intro_text1,.intro_text1{
+    display: block;
+    margin: 0 auto;
+}
+#welcomelogo{
+    width:20%;
+    margin-bottom:50px;
+    margin-top:50px;
+}
+#whiteflowerlogo{
+    width:25%;
+}
+.intro_text1{
+    text-align: center;
+    width:25%;
+}
+.intro_text2{
+    width:25%;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top:50px;
+}
+.intro_text3{
+    width:25%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top:50px;
+}
+.intro a{
+    text-decoration: none;
+    color: rgb(177, 177, 177);
+    font-weight: 700;
+}
+.intro a:hover{
+    color:#fde93a;
+}
+
+/* no ad */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}
+
+@media screen and (max-width: 420px){
+
+    /* about */
+    #abouttitle{
+        display: block;
+        margin:0 auto;
+        margin-top:10%;
+    }
+    #aboutinfo{
+        width: 90%;
+        display: block;
+        margin-top:5%;
+    }
+
+    /* login */
+    .login_form, .register_form{
+        display: block;
+        width:100%;
+    }
+    
+    /* welcome */
+    #welcomelogo{
+        width:50%;
+    }
+    #whiteflowerlogo{
+        width:55%;
+    }
+    .intro_text1{
+        width:50%;
+    }
+    .intro_text2{
+        width:80%;
+        display: lock;
+        margin-left:10%
+    }
+    .intro_text3{
+        width:80%;
+        display: block;
+    }
+}

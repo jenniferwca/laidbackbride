@@ -1,0 +1,121 @@
+/* basic style */
+html{
+    box-sizing:border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+body{
+    margin:0;
+}
+.page-wrapper {
+  max-width:1200px;
+  margin:0 auto;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+/* yellow : #fde93a */
+
+/* header */
+#lbblogo{
+    display:block;
+    margin: 50px auto;
+    width: 500px;
+}
+/* menu */
+.top-nav{
+    position:relative;
+    text-align: center;
+    padding:0;
+}
+.top-nav > li{
+    display:inline-block;
+    list-style-type:none;
+    margin: 0 30px 10px 30px;
+}
+.top-nav > li > a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 6.5px;
+    color: black;
+    padding: 5px;
+}
+.top-nav > li > a:hover{
+    border-top: solid 1px black;
+}
+/*footer*/
+#footer{
+    margin: 40px 40px 0 0;
+    float:right;
+}
+.copyrights {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* main */
+#title{
+    position: relative;
+}
+#expensetrackertitle{
+    margin: 5% 0 0 12%;
+    display: inline-block;
+    transition: 0.5s;
+}
+#expensetrackerdes{
+    display: inline-block;
+    width: 40%;
+    margin:0 0 0 5%;
+    padding:10px;
+    border-top:solid 1.25px #fde93a;
+}
+.list-container{
+    margin:5% auto;
+    width:30%;
+}
+.list-container ul{
+    padding:0;
+}
+.listtitle{
+    letter-spacing: 2px;
+    color: rgb(177, 177, 177);
+    display: block;
+}
+.listitem{
+    display: inline-block;
+    width:45%;
+    margin:3px;
+}
+.input_sec{
+    display: inline-block;
+    width:50%;
+}
+.result{
+    display: block;
+    margin:0 auto;
+    width:30%;
+}
+.savebtn{
+    background-color: #fde93a;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.result h2{
+    display: inline-block;
+    margin-left:18%;
+}
+#con_msg{
+    text-align: center;
+    margin-top:400px;
+}
+
+/* no ad */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}

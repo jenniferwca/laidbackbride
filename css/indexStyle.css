@@ -1,0 +1,104 @@
+/* basic style */
+html{
+    box-sizing:border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+body{
+    margin:0;
+}
+.page-wrapper {
+  max-width:1200px;
+  margin:0 auto;
+  position:relative;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+/* yellow : #fde93a */
+
+/* header */
+#lbblogo{
+    display: block;
+    margin: 50px auto;
+    width: 40%;
+}
+/* menu */
+.top-nav{
+    position:relative;
+    text-align: center;
+    padding:0;
+}
+.top-nav > li{
+    display:inline-block;
+    list-style-type:none;
+    margin: 0 30px 10px 30px;
+}
+.top-nav > li > a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 6.5px;
+    color: black;
+    padding: 5px;
+}
+.top-nav > li > a:hover{
+    border-top: solid 1px black;
+}
+/*footer*/
+#footer{
+    margin: 40px 40px 0 0;
+    float:right;
+}
+.copyrights {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* main */
+#frontposter{
+    display: block;
+    margin:auto;
+    width:70%;
+    z-index: -2;
+}
+#wordposter{
+    position: absolute;
+    animation: showlogo 2s linear;
+}
+@keyframes showlogo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#wordposter svg{
+    width:120%;
+    margin-left:120%;
+    margin-top:80%;
+}
+
+/* no ad */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}
+
+/* moblie */
+@media screen and (max-width: 420px){
+    /* index */
+    #lbblogo{
+        width:80%;
+    }
+    #frontposter{
+        margin:0;
+        width:100%;
+    }
+    .top-nav > li{
+        margin: 0 5px;
+    }
+    .top-nav > li > a{
+        letter-spacing: 3px;
+    }
+}
